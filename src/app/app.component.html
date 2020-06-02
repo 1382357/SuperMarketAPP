@@ -1,5 +1,5 @@
 
-<h1> {{title}} </h1>
+<h1 [ngStyle]="{'color':'green'}"> {{title}} </h1>
 
 
 <div id="products">
@@ -13,7 +13,7 @@
 </div>
 
 <div id="new">
-<h3> Add a new product </h3>
+<h3 [ngStyle]="{'color':'blue', 'text-decoration': 'underline'}" > Add a new product </h3>
 Name: <input type="text" name="productName" [(ngModel)]="newName">
 Quantity: <input type="number" name="productQ" [(ngModel)]="newQ">
 <button (click)="addProduct()"> Add new product to the list </button>
